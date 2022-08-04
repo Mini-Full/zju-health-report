@@ -16,9 +16,9 @@ jobs:
           - username: ZJU_USERNAME #wkx
             password: ZJU_PASSWORD
             dingtalk_token: DINGTALK_TOKEN
-          #- username: ZJU_USERNAME2 #hjr
-          #  password: ZJU_PASSWORD2
-          #  dingtalk_token: DINGTALK_TOKEN
+          - username: ZJU_USERNAME2 #hjr
+            password: ZJU_PASSWORD2
+            dingtalk_token: DINGTALK_TOKEN
           - username: ZJU_USERNAME3
             password: ZJU_PASSWORD3  #yuan
             dingtalk_token: DINGTALK_TOKEN
