@@ -28,6 +28,9 @@ jobs:
           - username: XIELIN
             password: XIELIN_PASSWORD
             dingtalk_token: DINGTALK_TOKEN
+          - username: YDS
+            password: YDS_PASSWORD
+            dingtalk_token: DINGTALK_TOKEN
     steps:
       - name: 打卡
         uses: zju-health-report/action@release
