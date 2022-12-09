@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # `0 23 * * *` 表示UTC 23:00，即北京时间7:00打卡（经测试，实际运行时间比设定时间晚几分钟到几十分钟）。
-    - cron: '0 23 * * *'
+    - cron: '00 22 * * *'
 
 jobs:
   main:
@@ -16,24 +16,24 @@ jobs:
           - username: ZJU_USERNAME #wkx
             password: ZJU_PASSWORD
             dingtalk_token: DINGTALK_TOKEN
-          - username: ZJU_USERNAME2 #hjr
-            password: ZJU_PASSWORD2
-            dingtalk_token: DINGTALK_TOKEN
+          #- username: ZJU_USERNAME2 #hjr
+          #  password: ZJU_PASSWORD2
+          #  dingtalk_token: DINGTALK_TOKEN
           #- username: ZJU_USERNAME3
           #  password: ZJU_PASSWORD3  #yuan
           #  dingtalk_token: DINGTALK_TOKEN
           - username: ZJU_HSQ
             password: PASSWORD_HSQ
             dingtalk_token: DINGTALK_TOKEN
-          - username: XIELIN
-            password: XIELIN_PASSWORD
-            dingtalk_token: DINGTALK_TOKEN
+          #- username: XIELIN
+          #  password: XIELIN_PASSWORD
+          #  dingtalk_token: DINGTALK_TOKEN
           - username: YDS
             password: YDS_PASSWORD
             dingtalk_token: DINGTALK_TOKEN
-          #- username: DZZ
-          #  password: DZZ_PASSWORD
-          #  dingtalk_token: DINGTALK_TOKEN
+          - username: DZZ
+            password: DZZ_PASSWORD
+            dingtalk_token: DINGTALK_TOKEN
     steps:
       - name: 打卡
         uses: zju-health-report/action@release
