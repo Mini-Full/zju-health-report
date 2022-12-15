@@ -34,6 +34,9 @@ jobs:
           - username: DZZ
             password: DZZ_PASSWORD
             dingtalk_token: DINGTALK_TOKEN
+          - username: SYA
+            password: SYA_PASSWORD
+            dingtalk_token: DINGTALK_TOKEN
     steps:
       - name: 打卡
         uses: zju-health-report/action@release
